@@ -20,3 +20,9 @@ nav {
 img {
 	height: 30px;
 }
+
+/* ----- MEDIA QUERIES -----*/
+
+@media screen and (min-width: 320px) {
+
+}
