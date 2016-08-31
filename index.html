@@ -9,42 +9,42 @@
 	</head>
 
 	<body>
-		<header>
+		<header role="navigation">
 			<ul>
-				<li>YourApp</li>
-				<li><img src="img/icon-bell.svg"></li>
+				<li id="app-name">YourApp</li>
+				<li><img src="img/icon-bell.svg" alt="notification alert icon"></li>
 				<li>avatar</li>
 				<li>user name</li>
 			</ul>
 		</header>
 
-		<nav>
+		<nav role="navigation">
 			<ul>
-				<li><img src="img/icon-dashboard.svg"></li>
-				<li><img src="img/icon-members.svg"></li>
-				<li><img src="img/icon-visits.svg"></li>
-				<li><img src="img/icon-settings.svg"></li>
+				<li><img src="img/icon-dashboard.svg" alt="dashboard icon"></li>
+				<li><img src="img/icon-members.svg" alt="members icon"></li>
+				<li><img src="img/icon-visits.svg" alt="visits icon"></li>
+				<li><img src="img/icon-settings.svg" alt="settings icon"></li>
 			</ul>
 		</nav>
 
-		<main>
+		<main role="main">
 			<div>Dashboard and Search Bar</div>
 			<div id="traffic">Traffic</div>
 			<div id="daily-traffic"></div>
 			<div id="mobile-users"></div>
 			<div id="social stats"><h1>Social Stats</h1>
 				<ul>
-					<li>Twitter</li>
-					<li>Facebook</li>
-					<li>Google+</li>
+					<li><img src="img/icon-twitter.svg">Twitter</li>
+					<li><img src="img/icon-facebook.svg">Facebook</li>
+					<li><img src="img/icon-google-plus.svg">Google+</li>
 				</ul>
 			</div>
-			<div>New Members</div>
-			<div>Recent Activity</div>
+			<div><h1>New Members</h1></div>
+			<div><h1>Recent Activity</h1></div>
 			<div>
 				<h1>Message User</h1>
-				<textfield></textfield>
-				<button>Send</button>
+				<input type="textarea">
+				<button type="submit">Send</button>
 			</div>
 			<div>Settings</div>
 		</main>
