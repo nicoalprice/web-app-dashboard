@@ -56,7 +56,12 @@ nav li {
 	flex-direction: column;
 	margin: 0;
 }
+/* Charts */
 
+#daily-traffic {
+	border: 1px solid black;
+	width: 50%;
+}
 /* Social Stats Widget */
 
 img#social-stats {
