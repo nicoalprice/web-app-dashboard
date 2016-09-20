@@ -1,8 +1,19 @@
 /* CHARTS */
 
-var dailyTraffic = document.getElementById("daily-traffic-chart");
+/* Traffic Chart */
+var traffic = document.getElementById("trafficChart");
 
-var myChart = new Chart(dailyTraffic, {
+var trafficChart = new Chart(traffic, {
+	type: 'line',
+	data: data,
+	options: options
+});
+
+
+/* Daily Traffic Chart */
+var dailyTraffic = document.getElementById("dailyTrafficChart");
+
+var dailyTrafficChart = new Chart(dailyTraffic, {
 	type: 'bar',
 	data: {
 		labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -39,21 +50,13 @@ var myChart = new Chart(dailyTraffic, {
 	}
 });
 
+/* Mobile Users Chart */
 
-/* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript.*/
-function sendMessage() {
-	var sendButton = document.getElementById("send-button");
-//when user clicks send
-// pop-up message
-// text "Your message has been sent."
-}
+var mobileUsers = document.getElementById("mobileUsersChart");
 
-
-/* Use JS to display error messages if user isn’t selected or message field is empty.*/
-function errorMessage() {
-	//(if no user is selected || message field is empty) {
-		//display error message
-	}
-}
-
+var mobileUsersChart = new Chart(mobileUsers, {
+	type: 'doughnut',
+	data: data,
+	options: options
+});
 
