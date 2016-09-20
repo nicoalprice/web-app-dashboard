@@ -1,13 +1,13 @@
 /* CHARTS */
 
 /* Traffic Chart */
-var traffic = document.getElementById("trafficChart");
-
-var trafficChart = new Chart(traffic, {
-	type: 'line',
-	data: data,
-	options: options
-});
+//var traffic = document.getElementById("trafficChart");
+//
+//var trafficChart = new Chart(traffic, {
+//	type: 'line',
+//	data: data,
+//	options: options
+//});
 
 
 /* Daily Traffic Chart */
@@ -52,11 +52,11 @@ var dailyTrafficChart = new Chart(dailyTraffic, {
 
 /* Mobile Users Chart */
 
-var mobileUsers = document.getElementById("mobileUsersChart");
-
-var mobileUsersChart = new Chart(mobileUsers, {
-	type: 'doughnut',
-	data: data,
-	options: options
-});
+//var mobileUsers = document.getElementById("mobileUsersChart");
+//
+//var mobileUsersChart = new Chart(mobileUsers, {
+//	type: 'doughnut',
+//	data: data,
+//	options: options
+//});
 
