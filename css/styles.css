@@ -21,7 +21,7 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 1;
-	height: 80px;
+	height: 60px;
 }
 
 header ul {
@@ -29,12 +29,13 @@ header ul {
 }
 
 header li {
-
+	flex-direction: flex-end;
 }
 
 li#app-name {
 	flex-grow: 4;
 	border: 1px solid pink;
+	margin-left: auto;
 }
 
 
@@ -46,17 +47,50 @@ nav {
 	display: flex;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 60px;
 	bottom: 0;
 	height: 100%;
 	width: 60px;
 }
 
+nav ul {
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 nav li {
 	flex-direction: column;
-	margin: 0;
+	margin: auto;
+	margin-left: 0;
+	padding: 10px;
 }
+
+#dash-and-search {
+	background: lightyellow;
+}
+
+/* Main */
+
+main {
+	margin-top: 60px;
+	margin-left: 60px;
+}
+
+#modules {
+	display: flex;
+}
+
+#modules div {
+	width: 50%;
+	flex-flow: wrap;
+}
+
 /* Charts */
+
+div {
+	border: 1px solid green;
+}
 
 #daily-traffic {
 	border: 1px solid black;
@@ -64,7 +98,19 @@ nav li {
 }
 /* Social Stats Widget */
 
-img#social-stats {
+#social-stats ul {
+	display: inline-flex;
+	width: 100%;
+}
+
+#social-stats li {
+	background: #fbfbfb;
+	border: 1px solid gray;
+	height: 60px;
+
+}
+
+social-stats img {
 	background: #7477bf;
 	color: white;
 }
