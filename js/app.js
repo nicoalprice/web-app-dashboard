@@ -13,3 +13,12 @@ function errorMessage() {
 		//display error message
 	}
 }
+
+
+/* Add green bar to selected item on left column menu */
+
+function showSelected() {
+	//when user clicks on menu item in left column
+	//icon turns white
+	//display green bar next to selected icon
+}
