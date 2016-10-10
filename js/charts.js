@@ -1,40 +1,19 @@
 /* CHARTS */
 
 /* Traffic Chart */
-//var traffic = document.getElementById("trafficChart");
-//
-//var trafficChart = new Chart(traffic, {
-//	type: 'line',
-//	data: data,
-//	options: options
-//});
+var traffic = document.getElementById("trafficChart");
 
-
-/* Daily Traffic Chart */
-var dailyTraffic = document.getElementById("dailyTrafficChart");
-
-var dailyTrafficChart = new Chart(dailyTraffic, {
-	type: 'bar',
+var trafficChart = new Chart(traffic, {
+	type: 'line',
 	data: {
-		labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+		labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "189-24", "25-31"],
 		datasets: [{
-			label: '# of Votes',
-			data: [12, 19, 3, 5, 2, 3],
+			data: [500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
 			backgroundColor: [
-				'rgba(255, 99, 132, 0.2)',
-				'rgba(54, 162, 235, 0.2)',
-				'rgba(255, 206, 86, 0.2)',
-				'rgba(75, 192, 192, 0.2)',
-				'rgba(153, 102, 255, 0.2)',
-				'rgba(255, 159, 64, 0.2)'
+				'#e2e3f6',
 			],
 			borderColor: [
-				'rgba(255,99,132,1)',
-				'rgba(54, 162, 235, 1)',
-				'rgba(255, 206, 86, 1)',
-				'rgba(75, 192, 192, 1)',
-				'rgba(153, 102, 255, 1)',
-				'rgba(255, 159, 64, 1)'
+				'rgba(115, 119, 191,1)'
 			],
 			borderWidth: 1
 		}]
@@ -43,7 +22,49 @@ var dailyTrafficChart = new Chart(dailyTraffic, {
 		scales: {
 			yAxes: [{
 				ticks: {
-					beginAtZero:true
+					beginAtZero:true,
+					max: 2500,
+					min: 0,
+					stepSize: 500,
+				}
+			}]
+		}
+	}
+});
+
+
+/* Daily Traffic Chart */
+var dailyTraffic = document.getElementById("dailyTrafficChart");
+
+var dailyTrafficChart = new Chart(dailyTraffic, {
+	type: 'bar',
+	data: {
+		labels: ["S", "M", "T", "W", "T", "F", "S"],
+		datasets: [{
+			data: [50, 75, 150, 100, 200, 175, 75],
+			backgroundColor: [
+				'rgba(115,119,191,1)',
+				'rgba(115,119,191,1)',
+				'rgba(115,119,191,1)',
+				'rgba(115,119,191,1)',
+				'rgba(115,119,191,1)',
+				'rgba(115,119,191,1)',
+				'rgba(115,119,191,1)'
+			],
+			borderColor: [
+				'rgba(115, 119, 191,1)'
+			],
+			borderWidth: 1
+		}]
+	},
+	options: {
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero:true,
+					max: 250,
+					min: 0,
+					stepSize: 50,
 				}
 			}]
 		}
@@ -52,11 +73,30 @@ var dailyTrafficChart = new Chart(dailyTraffic, {
 
 /* Mobile Users Chart */
 
-//var mobileUsers = document.getElementById("mobileUsersChart");
-//
-//var mobileUsersChart = new Chart(mobileUsers, {
-//	type: 'doughnut',
-//	data: data,
-//	options: options
-//});
+var mobileUsers = document.getElementById("mobileUsersChart");
+
+var mobileUsersChart = new Chart(mobileUsers, {
+	type: 'doughnut',
+	data: {
+	labels: [
+		"Phones",
+		"Tablets",
+		"Desktop"
+	],
+	datasets: [
+		{
+			data: [50, 50, 260],
+			backgroundColor: [
+				"#74b1bf",
+				"#81c98f",
+				"#7377bf"
+			],
+			hoverBackgroundColor: [
+				"#FF6384",
+				"#36A2EB",
+				"#FFCE56"
+			]
+		}]
+	}
+});
 
