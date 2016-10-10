@@ -15,7 +15,12 @@ var trafficChart = new Chart(traffic, {
 			borderColor: [
 				'rgba(115, 119, 191,1)'
 			],
-			borderWidth: 1
+			borderWidth: 1,
+			lineTension: 0,
+			pointBackgroundColor: 'white',
+			pointBorderColor: '#7377bf',
+			pointBorderWidth: 1.5,
+			pointRadius: 5,
 		}]
 	},
 	options: {
@@ -28,6 +33,9 @@ var trafficChart = new Chart(traffic, {
 					stepSize: 500,
 				}
 			}]
+		},
+		legend: {
+		display: false
 		}
 	}
 });
@@ -66,7 +74,10 @@ var dailyTrafficChart = new Chart(dailyTraffic, {
 					min: 0,
 					stepSize: 50,
 				}
-			}]
+			}],
+		},
+		legend: {
+			display: false,
 		}
 	}
 });
@@ -78,25 +89,30 @@ var mobileUsers = document.getElementById("mobileUsersChart");
 var mobileUsersChart = new Chart(mobileUsers, {
 	type: 'doughnut',
 	data: {
-	labels: [
-		"Phones",
-		"Tablets",
-		"Desktop"
-	],
-	datasets: [
-		{
-			data: [50, 50, 260],
-			backgroundColor: [
-				"#74b1bf",
-				"#81c98f",
-				"#7377bf"
-			],
-			hoverBackgroundColor: [
-				"#FF6384",
-				"#36A2EB",
-				"#FFCE56"
-			]
-		}]
+		labels: [
+			"Phones",
+			"Tablets",
+			"Desktop"
+		],
+		datasets: [
+			{
+				data: [50, 50, 260],
+				backgroundColor: [
+					"#74b1bf",
+					"#81c98f",
+					"#7377bf"
+				],
+				hoverBackgroundColor: [
+					"#FF6384",
+					"#36A2EB",
+					"#FFCE56",
+				]
+			}]
+		},
+	options: {
+		legend: {
+			position: 'right',
+		}
 	}
 });
 
