@@ -27,10 +27,11 @@ var trafficChart = new Chart(traffic, {
 		scales: {
 			yAxes: [{
 				ticks: {
-					beginAtZero:true,
+					beginAtZero: true,
 					max: 2500,
 					min: 0,
 					stepSize: 500,
+					labelOffset: 30,
 				}
 			}]
 		},
