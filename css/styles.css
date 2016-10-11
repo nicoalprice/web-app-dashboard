@@ -12,9 +12,14 @@ img {
 	height: 20px;
 }
 
+h1 {
+	font-size: 1.2em;
+	color: grey;
+}
+
 h2 {
 	text-transform: uppercase;
-	font-size: 1.1em;
+	font-size: 1.125em;
 	color: grey;
 }
 
@@ -56,7 +61,7 @@ li#app-name {
 
 #trademark {
 	vertical-align: super;
-	font-size: .4em;
+	font-size: .35em;
 	font-weight: 100;
 }
 
@@ -88,7 +93,23 @@ nav li {
 }
 
 #dash-and-search {
-	background: lightyellow;
+	background: white;
+	width: 100%;
+	border: 2px solid red;
+	height: 50px;
+}
+
+#search-banner {
+	width: 60%;
+	background: #fbfbfb;
+	height: 40px;
+}
+
+#search-bar {
+/*	width: 40%;*/
+	height: 30px;
+	background: white;
+	border-radius: 4px;
 }
 
 /* Main */
@@ -97,6 +118,8 @@ main {
 	margin-top: 120px;
 	padding: 20px;
 	width: 100%;
+	background: white;
+	border: 1px solid orange; /* for testing */
 }
 
 #modules {
