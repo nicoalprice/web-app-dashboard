@@ -43,6 +43,23 @@ li#app-name {
 	border: 1px solid pink;
 }
 
+#app-name {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	font-weight: 300;
+	padding: 2px;
+}
+
+#bold-app-name {
+	font-weight: 900;
+}
+
+#trademark {
+	vertical-align: super;
+	font-size: .4em;
+	font-weight: 100;
+}
+
 
 /* Navigation Menu */
 
