@@ -25,30 +25,33 @@ h2 {
 
 /* Header */
 
-header {
-	background: #7477bf;
-	color: white;
+#menus {
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1;
-	height: 60px;
+	width: 100%;
+}
+
+header {
+	background: #7477bf;
+	color: white;
 	display: flex;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 header ul {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	width: 100%;
 }
 
 header li {
-	justify-content: space-between;
-}
-
-#app-name {
-	margin-right: auto;
-	border: 1px solid pink;
+	justify-content: center;
 }
 
 #app-name {
@@ -56,6 +59,7 @@ header li {
 	font-size: 1.3em;
 	font-weight: 300;
 	padding: 2px;
+	border: 1px solid pink;
 }
 
 #bold-app-name {
@@ -74,25 +78,19 @@ header li {
 nav {
 	background: #4d4c72;
 	color: grey;
-	position: fixed;
-	left: 0;
-	top: 60px;
-	height: 60px;
 	width: 100%;
+	padding: 5px;
 }
 
 nav ul {
 	display: flex;
-/*	height: 40px;*/
 	width: 100%;
-	margin: auto;
-	padding-left: 0;
-	padding-right: 0;
+	padding: 0;
+	justify-content: space-around;
 }
 
 nav li {
-	flex-direction: row;
-	padding: 10px;
+/*	padding: 10px;*/
 }
 
 #dash-and-search {
@@ -118,7 +116,7 @@ nav li {
 /* Main */
 
 main {
-	margin-top: 120px;
+/*	margin-top: 120px;*/
 	padding: 20px;
 	width: 100%;
 	background: white;
@@ -199,9 +197,11 @@ button {
 	header {
 		justify-content: space-between;
 		padding-right: 10px;
+		height: 60px;
 	}
 
 	header ul {
+		flex-direction: row;
 		justify-content: space-between;
 	}
 
@@ -211,24 +211,26 @@ button {
 		border: 1px solid yellow; //for testing
 	}
 
+	#app-name {
+	margin-right: auto;
+}
+
 	nav {
-		position: fixed;
 		width: 80px;
 		height: 100%;
-		left: 0;
 		top: 60px;
 		bottom: 0;
 	}
 
 	nav ul {
-		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
 		margin-top: 20px;
+		padding: 0;
+		margin-left: 0;
 	}
 
 	nav li {
-		margin: auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
