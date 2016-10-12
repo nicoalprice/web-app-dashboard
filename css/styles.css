@@ -143,6 +143,10 @@ div {
 	border: 1px solid black;
 }
 
+#trafficChart {
+	padding: 10px;
+}
+
 #mobile-users {
 
 }

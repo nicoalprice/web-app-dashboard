@@ -6,9 +6,9 @@ var traffic = document.getElementById("trafficChart");
 var trafficChart = new Chart(traffic, {
 	type: 'line',
 	data: {
-		labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "189-24", "25-31"],
+		labels: [0, "16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31", "placeholder"],
 		datasets: [{
-			data: [500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
+			data: [0, 500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
 			backgroundColor: [
 				'#e2e3f6',
 			],
@@ -27,16 +27,20 @@ var trafficChart = new Chart(traffic, {
 		scales: {
 			yAxes: [{
 				ticks: {
-					beginAtZero: true,
 					max: 2500,
 					min: 0,
 					stepSize: 500,
 					labelOffset: 30,
-				}
+				},
+			}],
+			xAxes: [{
+				ticks: {
+					labelOffset: 30,
+				},
 			}]
 		},
 		legend: {
-		display: false
+			display: false
 		}
 	}
 });
