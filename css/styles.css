@@ -41,6 +41,7 @@ header {
 	display: flex;
 	padding-bottom: 0;
 	margin-bottom: 0;
+	width: 100%;
 }
 
 header ul {
@@ -116,7 +117,6 @@ nav li {
 /* Main */
 
 main {
-/*	margin-top: 120px;*/
 	padding: 20px;
 	width: 100%;
 	background: white;
@@ -198,6 +198,10 @@ button {
 		justify-content: space-between;
 		padding-right: 10px;
 		height: 60px;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		right: 0;
 	}
 
 	header ul {
@@ -212,14 +216,16 @@ button {
 	}
 
 	#app-name {
-	margin-right: auto;
-}
+		margin-right: auto;
+	}
 
 	nav {
 		width: 80px;
 		height: 100%;
 		top: 60px;
 		bottom: 0;
+		position: fixed;
+		height: 100%;
 	}
 
 	nav ul {
@@ -241,7 +247,13 @@ button {
 
 	main {
 		margin-top: 60px;
-		margin-left: 60px;
+		margin-left: 80px;
+		width: calc(100%-80px);
+	}
+
+	#charts {
+		width: 100%;
+		margin: auto;
 	}
 
 	#daily-traffic {
