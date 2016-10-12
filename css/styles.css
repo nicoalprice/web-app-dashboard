@@ -6,6 +6,7 @@
 body {
 	text-decoration: none;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 img {
@@ -247,7 +248,7 @@ button {
 
 	main {
 		margin-top: 60px;
-		margin-left: 80px;
+		padding-left: 100px;
 		width: calc(100%-80px);
 	}
 
