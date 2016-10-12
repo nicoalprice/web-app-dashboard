@@ -238,12 +238,13 @@ button {
 		flex-direction: column;
 		margin-top: 20px;
 		padding: 0;
-		margin-left: 0;
+/*		margin-left: 0;*/
 	}
 
 	nav li {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		margin: auto;
 	}
 
 	nav li img {
