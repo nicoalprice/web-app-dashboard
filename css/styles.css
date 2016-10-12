@@ -109,7 +109,6 @@ nav li {
 }
 
 #search-bar {
-/*	width: 40%;*/
 	height: 30px;
 	background: white;
 	border-radius: 4px;
@@ -119,18 +118,10 @@ nav li {
 
 main {
 	padding: 20px;
+	padding-top:150px;
 	width: 100%;
 	background: white;
 	border: 1px solid orange; /* for testing */
-}
-
-#modules {
-/*	display: flex;*/
-}
-
-#modules div {
-/*	width: 50%;*/
-/*	flex-flow: wrap;*/
 }
 
 /* Charts */
@@ -252,7 +243,6 @@ button {
 	}
 
 	main {
-		margin-top: 60px;
 		padding-left: 100px;
 		width: calc(100%-80px);
 	}
