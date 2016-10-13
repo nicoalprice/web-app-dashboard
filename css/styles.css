@@ -114,35 +114,53 @@ nav li {
 #dash-and-search {
 	background: white;
 	width: 100%;
-	border: 2px solid red;
-	height: 50px;
+	height: 80px;
+	position: relative;
+}
+
+#dash-title {
+	padding-left: 10px;
 }
 
 #search-banner {
 	width: 60%;
 	background: #fbfbfb;
-	height: 40px;
+	padding: 10px;
+	height: 60px;
+	border: 1px solid lightgray;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 #search-bar {
 	height: 30px;
+	width: 40%;
+	margin-right: 10px;
 	background: white;
 	border-radius: 4px;
+	position: absolute;
+	right: 10px;
 }
 
 /* Main */
 
 main {
 	padding: 20px;
-	padding-top:150px;
+	padding-top: 202px;
 	width: 100%;
 	background: white;
-	border: 1px solid orange; /* for testing */
 }
 
 /* Charts */
 
-div {
+#traffic,
+#daily-traffic,
+#mobile-users {
+	padding: 10px;
+}
+
+#charts {
 	border: 1px solid green;
 }
 
@@ -273,8 +291,11 @@ button {
 	}
 
 	main {
-		padding-left: 100px;
-		width: calc(100%-80px);
+		margin-left: 70px;
+		padding-left: 10px;
+		padding-top: 0;
+		margin-top: 60px;
+		width: calc(100%-70px);
 	}
 
 	#charts {

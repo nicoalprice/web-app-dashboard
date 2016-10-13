@@ -6,7 +6,7 @@ var traffic = document.getElementById("trafficChart");
 var trafficChart = new Chart(traffic, {
 	type: 'line',
 	data: {
-		labels: [0, "16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31", "placeholder"],
+		labels: ["", "16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31", ""],
 		datasets: [{
 			data: [0, 500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
 			backgroundColor: [
@@ -30,12 +30,11 @@ var trafficChart = new Chart(traffic, {
 					max: 2500,
 					min: 0,
 					stepSize: 500,
-					labelOffset: 30,
 				},
 			}],
 			xAxes: [{
 				ticks: {
-					labelOffset: 30,
+
 				},
 			}]
 		},
@@ -108,9 +107,9 @@ var mobileUsersChart = new Chart(mobileUsers, {
 					"#7377bf"
 				],
 				hoverBackgroundColor: [
-					"#FF6384",
-					"#36A2EB",
-					"#FFCE56",
+					"#5B98A6",
+					"#68B076",
+					"#5A5EA6",
 				]
 			}]
 		},
