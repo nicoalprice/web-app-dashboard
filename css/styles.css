@@ -13,6 +13,11 @@ img {
 	height: 20px;
 }
 
+.user-pics {
+	height: 30px;
+	border-radius: 30px;
+}
+
 h1 {
 	font-size: 1.2em;
 	color: grey;
@@ -72,7 +77,6 @@ header li {
 	font-size: 1.3em;
 	font-weight: 300;
 	padding: 2px;
-	border: 1px solid pink;
 	flex: 2 100%;
 }
 
@@ -215,6 +219,8 @@ button {
 	header ul {
 		flex-direction: row;
 		justify-content: space-between;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	header li {
@@ -229,9 +235,15 @@ button {
 
 	#divider {
 		display: block;
-		font-size: 2em;
+		font-size: 2.5em;
 		font-family: 'Lato', sans-serif;
 		font-weight: 100;
+		padding-bottom: .25em;
+	}
+
+	.user-pics {
+		height: 40px;
+		border-radius: 40px;
 	}
 
 	nav {
