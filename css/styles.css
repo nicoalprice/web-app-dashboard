@@ -39,6 +39,7 @@ h2 {
 	left: 0;
 	right: 0;
 	width: 100%;
+	z-index: 1;
 }
 
 header {
@@ -61,12 +62,6 @@ header ul {
 header li {
 	justify-content: center;
 }
-/*
-
-.profile {
-	flex: 1 100%;
-}
-*/
 
 #divider {
 	display: none;
@@ -107,40 +102,26 @@ nav ul {
 	justify-content: space-around;
 }
 
-nav li {
-/*	padding: 10px;*/
-}
-
-#dash-and-search {
-	background: white;
-	width: 100%;
-	height: 80px;
-	position: relative;
-}
+/* Dashboard Title and Search Bar */
 
 #dash-title {
-	padding-left: 10px;
+	display: none;
 }
 
 #search-banner {
-	width: 60%;
 	background: #fbfbfb;
 	padding: 10px;
 	height: 60px;
 	border: 1px solid lightgray;
-	position: absolute;
-	right: 0;
-	top: 0;
+	margin: auto;
 }
 
 #search-bar {
 	height: 30px;
-	width: 40%;
-	margin-right: 10px;
+	width: 90%;
+	margin: auto;
 	background: white;
 	border-radius: 4px;
-	position: absolute;
-	right: 10px;
 }
 
 /* Main */
@@ -296,6 +277,35 @@ button {
 		padding-top: 0;
 		margin-top: 60px;
 		width: calc(100%-70px);
+	}
+
+	#dash-and-search {
+		position: relative;
+	}
+	#dash-title {
+		display: block;
+		padding-left: 10px;
+	}
+
+	#search-banner {
+		width: 60%;
+		background: #fbfbfb;
+		padding: 10px;
+		height: 60px;
+		border: 1px solid lightgray;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	#search-bar {
+		height: 30px;
+		width: 40%;
+		margin-right: 10px;
+		background: white;
+		border-radius: 4px;
+		position: absolute;
+		right: 10px;
 	}
 
 	#charts {
