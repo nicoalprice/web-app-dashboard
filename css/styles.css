@@ -203,8 +203,8 @@ button {
 	color: white;
 }
 /* ----- MEDIA QUERIES -----*/
-
-@media screen and (min-width: 320px) {
+/*320px for phones*/
+@media screen and (min-width: 700px) {
 	header {
 		justify-content: space-between;
 		padding-right: 10px;
@@ -310,7 +310,10 @@ button {
 
 	#charts {
 		width: 100%;
-		margin: auto;
+	}
+
+	#traffic {
+		width: 95%;
 	}
 
 	#daily-traffic {
@@ -322,6 +325,10 @@ button {
 	#mobile-users {
 		width: 50%;
 		float: right;
+	}
+
+	#side-by-side-charts {
+		width: 95%;
 	}
 
 }
