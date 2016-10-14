@@ -7,6 +7,7 @@ body {
 	text-decoration: none;
 	width: 100%;
 	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -161,13 +162,12 @@ main {
 #social-stats {
 	width: 100%;
 	background: yellow;
-	display: flex;
 }
 
 #social-stats li {
 	font-size: 1.125em;
 	color: #7377bf;
-/*	margin: 10px;*/
+	padding: 10px;
 	background: #fbfbfb;
 	border: 1px solid gray;
 	border-radius: 4px;
@@ -192,12 +192,19 @@ main {
 #message-user,
 #settings {
 	border: 1px solid red;
+	height: 300px;
 }
 
 /* Buttons */
 
 button {
 	border-radius: 4px;
+}
+
+#send-button {
+	width: 100%;
+	height: 2.5em;
+	text-transform: uppercase;
 }
 
 #send-button,
@@ -343,23 +350,25 @@ button {
 		width: 100%;
 		border-top: 1px solid grey;
 		border-bottom: 1px solid grey;
+		position: relative;
 	}
 
 	#social-stats-title {
-/*
 		position: absolute;
 		top: 0;
 		left: 0;
-*/
 	}
 
-	ul#social-stats {
+	#social-stats ul {
 		display: flex;
+		width: 100%;
+		margin: auto;
+		align-content: space-between;
 	}
 
-	li#social-stats {
-		flex-direction: row;
-		height: 40px;
+	#social-stats li {
+		height: 50px;
+		width: 80px;
 	}
 
 	.social-number {
