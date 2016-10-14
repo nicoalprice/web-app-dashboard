@@ -185,6 +185,15 @@ main {
 	font-size: 1.1em;
 }
 
+/* User Widgets */
+
+#new-members,
+#recent-activity,
+#message-user,
+#settings {
+	border: 1px solid red;
+}
+
 /* Buttons */
 
 button {
