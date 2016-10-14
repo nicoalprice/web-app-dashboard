@@ -158,19 +158,18 @@ main {
 }
 /* Social Stats Widget */
 
-#social-stats ul {
-	display: inline-flex;
+#social-stats {
 	width: 100%;
+	background: yellow;
+	display: flex;
 }
 
 #social-stats li {
 	font-size: 1.125em;
 	color: #7377bf;
-	flex-grow: 1;
-	margin: 10px;
+/*	margin: 10px;*/
 	background: #fbfbfb;
 	border: 1px solid gray;
-	height: 60px;
 	border-radius: 4px;
 }
 
@@ -329,6 +328,38 @@ button {
 
 	#side-by-side-charts {
 		width: 95%;
+	}
+
+	#social-stats {
+		width: 100%;
+		border-top: 1px solid grey;
+		border-bottom: 1px solid grey;
+	}
+
+	#social-stats-title {
+/*
+		position: absolute;
+		top: 0;
+		left: 0;
+*/
+	}
+
+	ul#social-stats {
+		display: flex;
+	}
+
+	li#social-stats {
+		flex-direction: row;
+		height: 40px;
+	}
+
+	.social-number {
+		font-size: 2em;
+	}
+
+	.social-name {
+		color: purple;
+		font-weight: 600;
 	}
 
 }
