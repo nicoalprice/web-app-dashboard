@@ -236,8 +236,12 @@ main {
 }
 
 /* Need to figure out how to style toggle backgrounds */
-.toggle::before {
+.on-switch {
 	background: #7477bf;
+}
+
+.toggle-dot {
+	background: white;
 }
 
 #email-toggle a,
