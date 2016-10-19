@@ -10,6 +10,14 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+ul,
+li {
+	list-style-type: none;
+	list-style-position:inside;
+	margin:0;
+	padding:0;
+}
+
 img {
 	height: 20px;
 }
@@ -162,6 +170,7 @@ main {
 #social-stats {
 	width: 100%;
 	background: yellow;
+	padding: 10px;
 }
 
 #social-stats li {
@@ -171,6 +180,8 @@ main {
 	background: #fbfbfb;
 	border: 1px solid gray;
 	border-radius: 4px;
+	width: 80%;
+	margin: 5px auto;
 }
 
 #social-stats img {
@@ -328,7 +339,8 @@ button {
 	}
 
 	#traffic {
-		width: 95%;
+/*		width: 95%;*/
+/*		height: 400px;*/
 	}
 
 	#daily-traffic {
@@ -350,25 +362,29 @@ button {
 		width: 100%;
 		border-top: 1px solid grey;
 		border-bottom: 1px solid grey;
-		position: relative;
+/*		position: relative;*/
+		margin-top: 400px; //test
 	}
 
 	#social-stats-title {
-		position: absolute;
+/*		position: absolute;*/
 		top: 0;
 		left: 0;
 	}
 
 	#social-stats ul {
 		display: flex;
-		width: 100%;
+/*		width: 100%;*/
 		margin: auto;
 		align-content: space-between;
+		width: 75%;
 	}
 
 	#social-stats li {
-		height: 50px;
-		width: 80px;
+/*		height: 50px;*/
+/*		width: 80px;*/
+		flex-direction: column;
+		list-style-position: inside;
 	}
 
 	.social-number {
