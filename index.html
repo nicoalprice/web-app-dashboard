@@ -81,10 +81,11 @@
 					</form>
 				</div>
 				<div id="settings"><h2>Settings</h2>
+
 					<div id="email-toggle">
 						<label class="switch-light switch-ios" onclick="">
 						<input type="checkbox">
-							<strong>Send Email Notifications</strong><span>
+							<strong><span id="send-email">Send Email Notifications</span></strong><span id="toggle-element">
 								<span class="off-switch">Off</span>
 								<span class="on-switch">On</span>
 								<a></a>
@@ -96,7 +97,7 @@
 						<label class="switch-light switch-ios" onclick="">
 						<input type="checkbox" class="toggle">
 						<strong>Set Profile to Public</strong>
-						<span class="toggle">
+						<span id="toggle">
 							<span class="off-switch">Off</span>
 							<span class="on-switch">On</span>
 						<a></a>
