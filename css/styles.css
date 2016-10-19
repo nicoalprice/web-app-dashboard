@@ -3,6 +3,18 @@
 	list-style-type: none;
 }
 
+/* TEST */
+
+div {
+	border: 2px solid purple;
+}
+
+span {
+	border: 1px solid orange;
+}
+
+/* END TEST */
+
 body {
 	text-decoration: none;
 	width: 100%;
@@ -202,9 +214,24 @@ main {
 #recent-activity,
 #message-user,
 #settings {
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 	height: 300px;
 }
+
+#settings {
+
+}
+
+#email-toggle {
+
+}
+
+#timezone {
+	width: 90%;
+	margin: auto;
+}
+
+
 
 /* Buttons */
 
@@ -222,6 +249,10 @@ button {
 #save-button {
 	background: #7377bf;
 	color: white;
+}
+
+#save-button {
+
 }
 
 #cancel-button {
