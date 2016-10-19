@@ -235,6 +235,16 @@ main {
 	width: 100%;
 }
 
+/* Need to figure out how to style toggle backgrounds */
+.toggle::before {
+	background: #7477bf;
+}
+
+#email-toggle a,
+#public-toggle a {
+	background: white;
+}
+
 #timezone {
 	width: 90%;
 	margin: auto;
