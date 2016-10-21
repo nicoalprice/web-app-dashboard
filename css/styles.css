@@ -177,7 +177,18 @@ main {
 #mobile-users {
 
 }
-/* Social Stats Widget */
+
+
+/* --------- WIDGETS ---------- */
+
+#new-members,
+#recent-activity,
+#message-user,
+#settings {
+	height: 300px;
+}
+
+/* ----- Social Stats Widget ----- */
 
 #social-stats {
 	width: 100%;
@@ -208,14 +219,14 @@ main {
 	font-size: 1.1em;
 }
 
-/* User Widgets */
 
-#new-members,
-#recent-activity,
-#message-user,
-#settings {
-	height: 300px;
-}
+/* ----- New Members Widget ----- */
+
+
+/* ----- Recent Activity Widget ----- */
+
+
+/* ----- Message User Widget ----- */
 
 #search,
 #textarea {
@@ -227,27 +238,34 @@ main {
 	height: 100px;
 }
 
+
+/* ----- Settings Widget -----*/
+
 #settings {
 	width: 100%;
+
 }
 
 #toggle-element,
 #toggle {
 	width: 80px;
+	padding: 10px;
+	margin: auto;
 }
 
 #email-toggle,
 #public-toggle {
 	width: 100%;
-	height: 3em;
+	height: 6em;
 	padding: 10px;
-	width: 100%;
 }
 
-#send-email {
-	width: 60px;
+#send-email,
+#set-profile {
 	padding: 10px;
 	border: 1px dotted green;
+	text-align: center;
+	margin: auto;
 }
 
 /* Need to figure out how to style toggle backgrounds */
@@ -257,6 +275,7 @@ main {
 
 .toggle-dot {
 	background: white;
+	z-index: 1;
 }
 
 #email-toggle a,
@@ -273,7 +292,7 @@ main {
 
 
 
-/* Buttons */
+/* ----- Buttons ----- */
 
 button {
 	border-radius: 4px;
@@ -307,7 +326,9 @@ button {
 	background: #b2b2b2;
 	color: white;
 }
-/* ----- MEDIA QUERIES -----*/
+
+
+/* ---------- MEDIA QUERIES ----------*/
 /*320px for phones*/
 @media screen and (min-width: 700px) {
 	header {
@@ -485,6 +506,7 @@ button {
 		display: inline-block;
 		position: absolute;
 		right: 50%;
+		margin: 0;
 	}
 
 }
