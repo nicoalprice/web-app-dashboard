@@ -222,15 +222,19 @@ main {
 
 /* ----- New Members Widget ----- */
 .member-names {
-
+	color: gray;
 }
 
 .join-dates {
-
+	color: gray;
 }
 
 .member-emails {
+	color: #7477bf;
+}
 
+.divider {
+	border-bottom: 1px solid black;
 }
 
 
