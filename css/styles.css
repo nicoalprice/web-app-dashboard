@@ -5,13 +5,15 @@
 
 /* TEST */
 
+/*
 div {
-	border: 2px solid purple;
+	border: 1px dotted purple;
 }
 
 span {
 	border: 1px solid orange;
 }
+*/
 
 /* END TEST */
 
@@ -532,6 +534,33 @@ button {
 		font-weight: 600;
 	}
 
+	#new-members,
+	#recent-activity,
+	#message-user,
+	#settings {
+		width: calc(50%);
+		padding: 10px;
+		float: left;
+		border: 2px solid blue;
+	}
+
+	/* ---- New Members ----- */
+
+	#new-members {
+		font-size: .75em;
+	}
+
+	#new-members img {
+		height: 10px;
+	}
+
+	#new-member-info {
+		margin: 0;
+		height: auto;
+	}
+
+	/* ---- Settings -----*/
+
 	#email-toggle,
 	#public-toggle {
 		position: relative;
@@ -542,13 +571,14 @@ button {
 		display: inline-block;
 		float: right;
 		position: absolute;
-		right: 50%;
+		right: 30%;
 		margin: 0;
+		vertical-align: baseline;
 	}
 
 	#send-email,
 	#set-profile {
-		width: 40%;
+		width: 60%;
 		float: left;
 	}
 
