@@ -487,14 +487,18 @@ button {
 	}
 
 	#daily-traffic {
-		border: 1px solid black;
+		border: 1px solid darkgrey;
 		float: left;
 		width: 50%;
+		border-left: none;
 	}
 
 	#mobile-users {
 		width: 50%;
 		float: right;
+		border: 1px solid darkgrey;
+		border-left: none;
+		border-right: none;
 	}
 
 	#side-by-side-charts {
@@ -506,7 +510,7 @@ button {
 
 	#social-stats {
 		width: 100%;
-		border-top: 1px solid grey;
+/*		border-top: 1px solid grey;*/
 		margin-top: 400px; //test
 	}
 
@@ -560,12 +564,29 @@ button {
 
 	/* ---- New Members ----- */
 
-	#new-members img {
+	#new-members img,
+	#recent-activity img {
 		float: left;
 		margin-right: 10px;
 	}
 
 	.new-member-info {
+		height: auto;
+		padding: 10px;
+		font-size: .9em;
+	}
+
+	.join-dates {
+		float: right;
+	}
+
+	/* ---- New Activity -----*/
+
+	#recent-activity {
+		float: left;
+	}
+
+	.activity-info {
 		height: auto;
 		padding: 10px;
 		font-size: .9em;
