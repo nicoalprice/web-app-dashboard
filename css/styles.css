@@ -166,11 +166,11 @@ main {
 }
 
 #charts {
-	border: 1px solid green;
+/*	border: 1px solid green;*/
 }
 
 #daily-traffic {
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 
 #trafficChart {
@@ -482,7 +482,7 @@ button {
 	}
 
 	#traffic {
-/*		width: 95%;*/
+		width: 95%;
 /*		height: 400px;*/
 	}
 
@@ -510,14 +510,7 @@ button {
 
 	#social-stats {
 		width: 100%;
-/*		border-top: 1px solid grey;*/
-		margin-top: 400px; //test
-	}
-
-	#social-stats-title {
-/*		position: absolute;*/
-		top: 0;
-		left: 0;
+		padding: 10px;
 	}
 
 	#social-stats img {
@@ -526,15 +519,12 @@ button {
 
 	#social-stats ul {
 		display: flex;
-/*		width: 100%;*/
 		margin: auto;
 		align-content: space-between;
 		width: 75%;
 	}
 
 	#social-stats li {
-/*		height: 50px;*/
-/*		width: 80px;*/
 		flex-direction: column;
 		list-style-position: inside;
 		padding: 10px;
