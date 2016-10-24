@@ -39,6 +39,7 @@ img {
 .user-pics {
 	height: 30px;
 	border-radius: 30px;
+	padding: 2px;
 }
 
 h1 {
@@ -559,17 +560,15 @@ button {
 
 	/* ---- New Members ----- */
 
-	#new-members div{
-		font-size: .8em;
-	}
-
 	#new-members img {
-		height: 10px;
+		float: left;
+		margin-right: 10px;
 	}
 
-	#new-member-info {
-		margin: 0;
+	.new-member-info {
 		height: auto;
+		padding: 10px;
+		font-size: .9em;
 	}
 
 	/* ---- Settings -----*/
