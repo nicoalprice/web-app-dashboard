@@ -189,14 +189,15 @@ main {
 #settings {
 /*	height: 300px;*/
 	height: auto;
+	border: 1px solid lightgrey;
 }
 
 /* ----- Social Stats Widget ----- */
 
 #social-stats {
 	width: 100%;
-	background: yellow;
 	padding: 10px;
+	border: none;
 }
 
 #social-stats li {
@@ -473,6 +474,8 @@ button {
 		right: 10px;
 	}
 
+	/* ---- Charts -----*/
+
 	#charts {
 		width: 100%;
 	}
@@ -497,11 +500,12 @@ button {
 		width: 95%;
 	}
 
+
+/* ---- Widgets ----- */
+
 	#social-stats {
 		width: 100%;
 		border-top: 1px solid grey;
-		border-bottom: 1px solid grey;
-/*		position: relative;*/
 		margin-top: 400px; //test
 	}
 
@@ -509,6 +513,10 @@ button {
 /*		position: absolute;*/
 		top: 0;
 		left: 0;
+	}
+
+	#social-stats img {
+		float: left;
 	}
 
 	#social-stats ul {
@@ -524,15 +532,20 @@ button {
 /*		width: 80px;*/
 		flex-direction: column;
 		list-style-position: inside;
+		padding: 10px;
+		margin: 10px;
+		height: 80px;
 	}
 
 	.social-number {
 		font-size: 2em;
+		float: right;
 	}
 
 	.social-name {
 		color: purple;
 		font-weight: 600;
+		float: right;
 	}
 
 	#new-members,
@@ -542,13 +555,12 @@ button {
 		width: calc(50%);
 		padding: 10px;
 		float: left;
-		border: 2px solid blue;
 	}
 
 	/* ---- New Members ----- */
 
-	#new-members {
-		font-size: .75em;
+	#new-members div{
+		font-size: .8em;
 	}
 
 	#new-members img {
