@@ -580,6 +580,8 @@ button {
 	#set-profile {
 		width: 60%;
 		float: left;
+		text-align: left;
+		vertical-align: baseline;
 	}
 
 }
