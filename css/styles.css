@@ -187,7 +187,8 @@ main {
 #recent-activity,
 #message-user,
 #settings {
-	height: 300px;
+/*	height: 300px;*/
+	height: auto;
 }
 
 /* ----- Social Stats Widget ----- */
