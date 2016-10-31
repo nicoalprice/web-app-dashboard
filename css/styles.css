@@ -520,15 +520,17 @@ button {
 		padding: 10px;
 	}
 
-	#social-stats img {
-		float: left;
-	}
-
 	#social-stats ul {
 		display: flex;
 		margin: auto;
+		flex-wrap: wrap;
 		align-content: space-between;
-		width: 100%;
+		justify-content: center;
+		width: calc(90%-80px);
+	}
+
+	#social-stats img {
+		float: left;
 	}
 
 	#social-stats li {
