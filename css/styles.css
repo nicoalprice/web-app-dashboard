@@ -528,15 +528,17 @@ button {
 		display: flex;
 		margin: auto;
 		align-content: space-between;
-		width: 75%;
+		width: 100%;
 	}
 
 	#social-stats li {
-		flex-direction: column;
+		flex-direction: row;
 		list-style-position: inside;
 		padding: 10px;
 		margin: 10px;
 		height: 80px;
+		min-width: 190px;
+		max-width: 240px;
 	}
 
 	.social-number {
