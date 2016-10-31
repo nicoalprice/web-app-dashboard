@@ -32,12 +32,9 @@ var trafficChart = new Chart(traffic, {
 					stepSize: 500,
 				},
 			}],
-			xAxes: [{
-				ticks: {
-
-				},
-			}]
 		},
+		responsive: true,
+//		maintainAspectRatio: false,
 		legend: {
 			display: false
 		}
