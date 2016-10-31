@@ -113,6 +113,10 @@ var mobileUsersChart = new Chart(mobileUsers, {
 	options: {
 		legend: {
 			position: 'right',
+			labels: {
+				boxWidth: 15,
+				fontSize: 14
+			}
 		}
 	}
 });

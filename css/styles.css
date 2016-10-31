@@ -3,20 +3,6 @@
 	list-style-type: none;
 }
 
-/* TEST */
-
-/*
-div {
-	border: 1px dotted purple;
-}
-
-span {
-	border: 1px solid orange;
-}
-*/
-
-/* END TEST */
-
 body {
 	text-decoration: none;
 	width: 100%;
@@ -307,7 +293,6 @@ main {
 #send-email,
 #set-profile {
 	padding: 10px;
-	border: 1px dotted green;
 	text-align: center;
 	margin: auto;
 }
@@ -335,7 +320,6 @@ main {
 }
 
 
-
 /* ----- Buttons ----- */
 
 button {
@@ -346,10 +330,10 @@ button {
 	width: 100%;
 	height: 2em;
 	text-transform: uppercase;
-	position: relative;
-	bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	bottom: 0;
 }
 
 #send-button,
@@ -533,6 +517,10 @@ button {
 		float: left;
 	}
 
+	.social-container {
+		margin-left: 70px;
+	}
+
 	#social-stats li {
 		flex-direction: row;
 		list-style-position: inside;
@@ -545,13 +533,11 @@ button {
 
 	.social-number {
 		font-size: 2em;
-		float: right;
 	}
 
 	.social-name {
 		color: purple;
 		font-weight: 600;
-		float: right;
 	}
 
 	#new-members,
