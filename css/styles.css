@@ -270,15 +270,19 @@ path {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: darkgrey;
+	padding-left: 20px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
 	color: darkgrey;
+	padding-left: 20px;
 }
 :-ms-input-placeholder { /* IE 10+ */
 	color: darkgrey;
+	padding-left: 20px;
 }
 :-moz-placeholder { /* Firefox 18- */
 	color: darkgrey;
+	padding-left: 20px;
 }
 
 
@@ -371,6 +375,7 @@ button {
 
 
 /* ---------- MEDIA QUERIES ----------*/
+
 /*320px for phones*/
 @media screen and (min-width: 700px) {
 	header {
@@ -452,11 +457,11 @@ button {
 	}
 	#dash-title {
 		display: block;
-		padding-left: 10px;
+		padding: 20px;
 	}
 
 	#search-banner {
-		width: 60%;
+		width: 85%;
 		background: #fbfbfb;
 		padding: 10px;
 		height: 60px;
@@ -467,13 +472,13 @@ button {
 	}
 
 	#search-bar {
-		height: 30px;
+		height: 2em;
 		width: 40%;
-		margin-right: 10px;
+		margin-right: 20px;
 		background: white;
 		border-radius: 4px;
 		position: absolute;
-		right: 10px;
+		right: 50px;
 	}
 
 	/* ---- Charts -----*/
@@ -639,4 +644,14 @@ button {
 		vertical-align: baseline;
 	}
 
+}
+
+@media screen and (min-width: 700px) and (max-width: 840px) {
+	#search-banner {
+		width: 75%;
+	}
+
+	#search-bar {
+		width: 60%;
+	}
 }
