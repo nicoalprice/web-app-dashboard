@@ -196,11 +196,21 @@ main {
 	margin: 5px auto;
 }
 
-#social-stats img {
-	background: #7477bf;
-	color: white;
+.social-svgs {
 	height: 50px;
+	width: 50px;
 	border-radius: 50px;
+	background-color: #7477bf;
+	float: left;
+}
+
+path {
+	fill: white;
+}
+
+.social-container {
+/*	float: right;*/
+	margin-left: 60px;
 }
 
 .social-number {
@@ -529,14 +539,6 @@ button {
 		align-content: space-between;
 		justify-content: center;
 		width: calc(90%-80px);
-	}
-
-	#social-stats img {
-		float: left;
-	}
-
-	.social-container {
-		margin-left: 70px;
 	}
 
 	#social-stats li {
