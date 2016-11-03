@@ -563,6 +563,7 @@ button {
 	.social-name {
 		color: purple;
 		font-weight: 600;
+		font-size: .8em;
 	}
 
 	#new-members,
