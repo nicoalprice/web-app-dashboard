@@ -151,21 +151,16 @@ main {
 	padding: 10px;
 }
 
-#charts {
-/*	border: 1px solid green;*/
-}
-
-#daily-traffic {
-/*	border: 1px solid black;*/
+#daily-traffic,
+#mobile-users,
+#social-stats {
+	border-top: 1px solid lightgrey;
 }
 
 #trafficChart {
 	padding: 10px;
 }
 
-#mobile-users {
-
-}
 
 
 /* --------- WIDGETS ---------- */
@@ -174,12 +169,13 @@ main {
 #recent-activity,
 #message-user,
 #settings {
-/*	height: auto;*/
-	height: 298px;
-	border: 1px solid lightgrey;
+	height: auto;
 	position: relative;
 	top: 0;
 	bottom: 0;
+	border-top: 1px solid lightgrey;
+	margin-bottom: 30px;
+
 }
 
 /* ----- Social Stats Widget ----- */
@@ -187,7 +183,6 @@ main {
 #social-stats {
 	width: 100%;
 	padding: 10px;
-	border: none;
 }
 
 #social-stats li {
@@ -229,6 +224,7 @@ main {
 
 .divider {
 	border-bottom: 1px solid black;
+	margin: 10px auto;
 }
 
 
@@ -245,6 +241,9 @@ main {
 
 /* ----- Message User Widget ----- */
 
+#message-user {
+}
+
 #search,
 #textarea {
 	width: 100%;
@@ -256,19 +255,20 @@ main {
 
 #textarea {
 	height: 130px;
+	position: relative;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: darkgrey;
+	color: darkgrey;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: darkgrey;
+	color: darkgrey;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: darkgrey;
+	color: darkgrey;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: darkgrey;
+	color: darkgrey;
 }
 
 
@@ -325,11 +325,11 @@ main {
 button {
 	border-radius: 4px;
 	height: 2em;
+	text-transform: uppercase;
 }
 
 #send-button {
 	width: 100%;
-	text-transform: uppercase;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -472,6 +472,13 @@ button {
 		width: 100%;
 	}
 
+	#new-members,
+	#recent-activity,
+	#message-user,
+	#settings {
+		border: none;
+	}
+
 	#traffic {
 		width: 95%;
 /*		height: 400px;*/
@@ -497,7 +504,18 @@ button {
 	}
 
 
-/* ---- Widgets ----- */
+/* ---- Media Query Widgets ----- */
+
+
+	#new-members,
+	#recent-activity,
+	#message-user,
+	#settings {
+		height: auto;
+		border: 1px solid lightgrey;
+		margin-bottom: 0;
+
+	}
 
 	#social-stats {
 		width: 100%;
