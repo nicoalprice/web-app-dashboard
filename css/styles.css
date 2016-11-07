@@ -198,7 +198,7 @@ main {
 
 .social-svgs {
 	height: 50px;
-	width: 50px;
+	width: auto;
 	border-radius: 50px;
 	background-color: #7477bf;
 	float: left;
@@ -208,8 +208,11 @@ path {
 	fill: white;
 }
 
+#instagram-svg {
+	fill: #7477bf;
+}
+
 .social-container {
-/*	float: right;*/
 	margin-left: 60px;
 }
 
