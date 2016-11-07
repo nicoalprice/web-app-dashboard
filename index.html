@@ -44,12 +44,18 @@
 			</div>
 
 			<div id="alert">
-				<div id="alert-message"><span id="alert-heading">Alert </span>Fusce elementum neque sed nisi lobortis, non dapibus diam cursus. Nulla vitae blandit odio.</div>
+				<div id="alert-message"><span id="alert-heading">Alert </span>Fusce elementum neque sed nisi lobortis, non dapibus diam cursus. Nulla vitae blandit odio.<span id="close-button">X</span></div>
 			</div>
 
 			<div id="charts">
 				<div id="traffic">
 					<h2>Traffic</h2>
+						<div id="traffic-chart-buttons">
+							<div id="hourly-traffic">Hourly</div>
+							<div id="daily-traffic-button">Daily</div>
+							<div id="weekly-traffic" class="active">Weekly</div>
+							<div id="monthly-traffic">Monthly</div>
+						</div>
 					<canvas id="trafficChart" width="500" height="200"></canvas>
 				</div>
 				<div id="side-by-side-charts">

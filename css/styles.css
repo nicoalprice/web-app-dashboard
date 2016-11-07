@@ -139,20 +139,28 @@ nav ul {
 #alert {
 	color: white;
 	background-color: #7377bf;
-	height: 2em;
+	height: 2.5em;
 	width: 90%;
 	margin: auto;
 	border-radius: 3px;
 }
 
 #alert-heading {
-	line-height: 2em;
+	line-height: 2.5em;
 	font-weight: 800;
 	padding: 10px;
 }
 
 #alert-message {
-	line-height: 2em;
+	line-height: 2.5em;
+	position: relative;
+}
+
+#close-button {
+	line-height: 2.5em;
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
 }
 
 /* Main */
@@ -170,6 +178,38 @@ main {
 #daily-traffic,
 #mobile-users {
 	padding: 10px;
+}
+
+#traffic {
+	position: relative;
+}
+
+#traffic-chart-buttons {
+	height: 2em;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	width: 70%;
+	margin-bottom: 20px;
+	color: grey;
+}
+
+#hourly-traffic,
+#daily-traffic-button,
+#weekly-traffic,
+#monthly-traffic {
+	width: 100px;
+	height: 2em;
+	line-height: 2em;
+	float: right;
+	text-align: center;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
+.active {
+	background: lightgreen;
+	color: white;
 }
 
 #daily-traffic,
