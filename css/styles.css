@@ -134,6 +134,27 @@ nav ul {
 	border-radius: 4px;
 }
 
+/* Alert */
+
+#alert {
+	color: white;
+	background-color: #7377bf;
+	height: 2em;
+	width: 90%;
+	margin: auto;
+	border-radius: 3px;
+}
+
+#alert-heading {
+	line-height: 2em;
+	font-weight: 800;
+	padding: 10px;
+}
+
+#alert-message {
+	line-height: 2em;
+}
+
 /* Main */
 
 main {
