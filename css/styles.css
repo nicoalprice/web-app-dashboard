@@ -272,7 +272,7 @@ main {
 	background: #fbfbfb;
 	border: 1px solid gray;
 	border-radius: 4px;
-	width: 80%;
+	width: 180px;
 	margin: 5px auto;
 }
 
@@ -290,6 +290,14 @@ path {
 
 #instagram-svg {
 	fill: #7477bf;
+}
+
+#pinterest-svg {
+	fill: #7477bf;
+}
+
+#pinterest-background {
+	background: white;
 }
 
 .social-container {
@@ -612,7 +620,6 @@ button {
 		height: auto;
 		border: 1px solid lightgrey;
 		margin-bottom: 0;
-
 	}
 
 	#social-stats {
@@ -635,8 +642,8 @@ button {
 		padding: 10px;
 		margin: 10px;
 		height: 80px;
-		min-width: 190px;
-		max-width: 240px;
+		min-width: 200px;
+		max-width: 200px;
 	}
 
 	.social-number {

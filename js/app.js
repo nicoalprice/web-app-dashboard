@@ -58,7 +58,7 @@ monthly.click(function() {
 
 /* Close alert message when X is clicked. */
 $("#close-button").click(function() {
-	$("#alert").fadeOut( "slow" );
+	$("#alert").fadeOut("slow");
 	$("#alert-dot").fadeOut("slow");
 });
 
