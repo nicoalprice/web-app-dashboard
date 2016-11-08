@@ -205,11 +205,16 @@ main {
 	text-align: center;
 	border-radius: 20px;
 	margin-left: 10px;
+	font-weight: 600;
 }
 
 .active {
-	background: lightgreen;
+	background: #81c98f;
 	color: white;
+}
+
+#close-button {
+	font-weight: 800;
 }
 
 #daily-traffic,

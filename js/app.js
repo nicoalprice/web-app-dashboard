@@ -56,6 +56,14 @@ monthly.click(function() {
 
 });
 
+/* Close alert message when X is clicked. */
+$("#close-button").click(function() {
+	$("#alert").fadeOut( "slow" );
+	$("#notification-bell").fadeOut("slow");
+	$("#divider").fadeOut("slow");
+});
+
+
 /* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript.*/
 function sendMessage() {
 	var sendButton = document.getElementById("send-button");
