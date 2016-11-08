@@ -1,6 +1,6 @@
 /* CHARTS */
 
-/* Traffic Chart */
+/* Weekly Line Chart */
 var traffic = document.getElementById("trafficChart");
 
 var trafficChart = new Chart(traffic, {
@@ -21,7 +21,45 @@ var trafficChart = new Chart(traffic, {
 			pointBorderColor: '#7377bf',
 			pointBorderWidth: 1.5,
 			pointRadius: 5,
-		}]
+			},
+
+			{//hourly
+				data: [0, 30, 10, 750, 1230, 150, 650, 100, 12, 50, 20, 15, 21],
+				label: "daily",
+				backgroundColor: [
+					'#e2e776',
+				],
+				borderColor: [
+					'rgba(115, 121, 122,1)'
+				],
+				borderWidth: 1,
+				lineTension: 0,
+				pointBackgroundColor: 'white',
+				pointBorderColor: '#7377bf',
+				pointBorderWidth: 1.5,
+				pointRadius: 5,
+				hidden: true
+			}
+
+				   {//daily
+				data: [0, 340, 100, 75, 1230, 150, 650, 1000, 100, 500, 200, 150, 200],
+				label: "daily",
+				backgroundColor: [
+					'#e2e776',
+				],
+				borderColor: [
+					'rgba(115, 121, 122,1)'
+				],
+				borderWidth: 1,
+				lineTension: 0,
+				pointBackgroundColor: 'white',
+				pointBorderColor: '#7377bf',
+				pointBorderWidth: 1.5,
+				pointRadius: 5,
+				hidden: true
+			}
+		]
+
 	},
 	options: {
 		scales: {
@@ -34,13 +72,11 @@ var trafficChart = new Chart(traffic, {
 			}],
 		},
 		responsive: true,
-//		maintainAspectRatio: false,
 		legend: {
 			display: false
 		}
 	}
 });
-
 
 /* Daily Traffic Chart */
 var dailyTraffic = document.getElementById("dailyTrafficChart");

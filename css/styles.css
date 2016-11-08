@@ -241,7 +241,17 @@ main {
 	padding: 10px;
 }
 
+#hourly-trafficChart {
+	display: none;
+}
 
+#daily-trafficChart {
+	display: none;
+}
+
+#monthly-trafficChart {
+	display: none;
+}
 
 /* --------- WIDGETS ---------- */
 
