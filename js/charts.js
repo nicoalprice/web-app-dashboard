@@ -49,22 +49,26 @@ var dailyTrafficChart = new Chart(dailyTraffic, {
 	type: 'bar',
 	data: {
 		labels: ["S", "M", "T", "W", "T", "F", "S"],
-		datasets: [{
-			data: [50, 75, 150, 100, 200, 175, 75],
-			backgroundColor: [
-				'rgba(115,119,191,1)',
-				'rgba(115,119,191,1)',
-				'rgba(115,119,191,1)',
-				'rgba(115,119,191,1)',
-				'rgba(115,119,191,1)',
-				'rgba(115,119,191,1)',
-				'rgba(115,119,191,1)'
-			],
-			borderColor: [
-				'rgba(115, 119, 191,1)'
-			],
-			borderWidth: 1
-		}]
+		datasets: [
+
+			{
+				type: 'bar',
+				label: 'Desktop',
+				data: [50, 75, 150, 100, 200, 175, 75],
+				backgroundColor: 'rgba(115,119,191,1)',
+				borderColor: 'rgba(115, 119, 191,1)',
+				borderWidth: 1
+			},
+
+			{
+				type: 'bar',
+				label: 'Mobile',
+				data: [154, 210, 137, 154, 543, 112, 242],
+				backgroundColor: '#A15F7D'
+			}
+
+		]
+
 	},
 	options: {
 		scales: {
@@ -93,20 +97,23 @@ var mobileUsersChart = new Chart(mobileUsers, {
 		labels: [
 			"Phones",
 			"Tablets",
-			"Desktop"
+			"Desktop",
+			"Other"
 		],
 		datasets: [
 			{
-				data: [50, 50, 260],
+				data: [50, 50, 260, 43],
 				backgroundColor: [
 					"#74b1bf",
 					"#81c98f",
-					"#7377bf"
+					"#7377bf",
+					"#A15F7D"
 				],
 				hoverBackgroundColor: [
 					"#5B98A6",
 					"#68B076",
 					"#5A5EA6",
+					"#874563"
 				]
 			}]
 		},
