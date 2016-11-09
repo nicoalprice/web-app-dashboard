@@ -554,13 +554,13 @@ button {
 	}
 
 	main {
-	padding:0;
-	padding-top: 0px;
-	margin-top: 60px;
-	margin-left: 80px;
-	width: calc(100%-80px);
-	background: white;
-	}
+		margin-top: 60px;
+		margin-left: 80px;
+		padding: 20px;
+		padding-top: 0;
+		padding-right: 0;
+		width: calc(100%-80px);
+}
 
 	#dash-and-search {
 		position: relative;
@@ -577,6 +577,7 @@ button {
 		padding: 10px;
 		height: 60px;
 		border: 1px solid lightgray;
+		border-right: none;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -596,6 +597,7 @@ button {
 
 	#charts {
 		width: 100%;
+		float: left;
 	}
 
 	#traffic {
@@ -630,7 +632,6 @@ button {
 	}
 
 	#daily-traffic {
-		border: 1px solid darkgrey;
 		float: left;
 		width: 50%;
 		border-left: none;
@@ -639,13 +640,11 @@ button {
 	#mobile-users {
 		width: 50%;
 		float: right;
-		border: 1px solid darkgrey;
-		border-left: none;
-		border-right: none;
+		border-left: 1px solid darkgrey;
 	}
 
 	#side-by-side-charts {
-		width: 100%;
+		border-bottom: none;
 	}
 
 
@@ -654,6 +653,7 @@ button {
 	#social-stats {
 		width: 100%;
 		padding: 10px;
+		float: left;
 	}
 
 	#social-stats ul {
