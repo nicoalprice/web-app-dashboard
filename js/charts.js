@@ -15,8 +15,8 @@ var monthly = $("#monthly-traffic");
 // declare array including all traffic chart buttons
 var buttonArray = [hourly, daily, weekly, monthly];
 
-//show weekly chart by default/on page load
-weekly.hasClass("active", function() {
+// Show weekly chart by default/on page load
+$(document).ready(function(){
 	var trafficChart = new Chart(traffic, {
 		type: 'line',
 		data: {
@@ -57,6 +57,7 @@ weekly.hasClass("active", function() {
 	});
 });
 
+
 // On click of a button
 hourly.click(function() {
 	// Remove .active class from all buttons
@@ -74,7 +75,7 @@ hourly.click(function() {
 			datasets: [{
 				data: [0, 5, 20, 25, 58, 74, 17, 10, 4, 150, 20, 18, 21],
 				backgroundColor: [
-					'#f42426',
+					'#74b1bf',
 				],
 				borderColor: [
 					'rgba(115, 119, 191,1)'
@@ -125,7 +126,7 @@ daily.click(function() {
 			datasets: [{
 				data: [0, 50, 100, 250, 258, 745, 127, 100, 104, 150, 2000, 180, 210],
 				backgroundColor: [
-					'#e24426',
+					'#81c98f',
 				],
 				borderColor: [
 					'rgba(115, 119, 191,1)'
@@ -241,9 +242,9 @@ monthly.click(function() {
 		data: {
 			labels: ["", "16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31", ""],
 			datasets: [{
-				data: [0, 500, 1000, 750, 1250, 1750, 1250, 1500, 1000, 1500, 2000, 1500, 2000],
+				data: [0, 1502, 2000, 1750, 2250, 1750, 1459, 1800, 1058, 1570, 2080, 1901, 2000],
 				backgroundColor: [
-					'#e28626',
+					'#A15F7D',
 				],
 				borderColor: [
 					'rgba(115, 119, 191,1)'
