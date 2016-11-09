@@ -135,6 +135,7 @@ nav ul {
 #search-banner {
 	background: #fbfbfb;
 	padding: 10px;
+	padding-top: 0;
 	height: 60px;
 	border: 1px solid lightgray;
 	margin: auto;
@@ -151,8 +152,7 @@ nav ul {
 /* Main */
 
 main {
-	padding: 20px;
-	padding-top: 202px;
+	padding: 202px 20px 20px 20px;
 	width: 100%;
 	background: white;
 }
@@ -272,6 +272,14 @@ main {
 	padding: 10px;
 }
 
+#social-stats ul {
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+}
+
 #social-stats li {
 	font-size: 1.125em;
 	color: #7377bf;
@@ -307,9 +315,11 @@ path {
 	background: white;
 }
 
+/*
 .social-container {
 	margin-left: 60px;
 }
+*/
 
 .social-number {
 	color: grey;
@@ -555,14 +565,13 @@ button {
 	main {
 		margin-top: 60px;
 		margin-left: 80px;
-		padding: 20px;
-		padding-top: 0;
-		padding-right: 0;
+		padding: 0;
 		width: calc(100%-80px);
 }
 
 	#dash-and-search {
 		position: relative;
+		margin-top: 0;
 	}
 
 	#dash-title {
@@ -595,7 +604,9 @@ button {
 	/* ---- Media Query Charts -----*/
 
 	#charts {
-		width: 100%;
+		width: 95%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
 		float: left;
 	}
 
@@ -612,7 +623,7 @@ button {
 		right: 0;
 		top: 20px;
 		width: 70%;
-		margin-right: 20px;
+		margin-right: 5%;
 		margin-bottom: 20px;
 		color: grey;
 	}
@@ -657,12 +668,7 @@ button {
 	}
 
 	#social-stats ul {
-		display: flex;
-		margin: auto;
-		flex-wrap: wrap;
-		align-content: space-between;
-		justify-content: center;
-		width: calc(90%-80px);
+		width: 100%;
 	}
 
 	#social-stats li {
