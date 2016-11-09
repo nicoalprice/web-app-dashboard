@@ -564,8 +564,7 @@ button {
 
 	main {
 		margin-top: 60px;
-		margin-left: 80px;
-		padding: 0;
+		padding: 0 0 0 80px;
 		width: calc(100%-80px);
 }
 
@@ -604,9 +603,7 @@ button {
 	/* ---- Media Query Charts -----*/
 
 	#charts {
-		width: 95%;
-		padding-left: 2.5%;
-		padding-right: 2.5%;
+		width: 100%;
 		float: left;
 	}
 
