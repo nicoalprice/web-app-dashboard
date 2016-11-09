@@ -15,10 +15,14 @@ function sendMessage() {
 
 
 /* Use JS to display error messages if user isn’t selected or message field is empty.*/
-//function errorMessage() {
-//	//(if no user is selected || message field is empty) {
+//function userError() {
+//	//(if no user is selected) {
 //		//display error message
 //	}
+//}
+//
+//function messageError() {
+//
 //}
 
 
