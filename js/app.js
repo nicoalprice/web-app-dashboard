@@ -5,14 +5,22 @@ $("#close-button").click(function() {
 });
 
 
-/* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript.*/
+/* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript. */
 
 //when user clicks send
 $('#send-button').click(function(e) {
 	//prevent default button click behavior
 	e.preventDefault();
+	$('#message-form').hide();
 	//replace html in that section with message and button
-	$('#message-user').replaceWith('<div id="message-user"><p>Thanks! Your message has been sent.</p><p><button>New Message</button><p></div>');
+	$('#message-user').append('<div id="confirmation"><p>Thanks! Your message has been sent.</p><p><button id="new-message">New Message</button><p></div>');
+	//when user clicks new message button
+		$('#new-message').click(function(){
+			// remove confirmation message and button
+			$('#confirmation').remove();
+			// revert back to original message form
+			$('#message-form').show();
+		});
 });
 
 
