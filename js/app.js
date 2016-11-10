@@ -12,15 +12,38 @@ $('#send-button').click(function(e) {
 	//prevent default button click behavior
 	e.preventDefault();
 	$('#message-form').hide();
-	//replace html in that section with message and button
-	$('#message-user').append('<div id="confirmation"><p>Thanks! Your message has been sent.</p><p><button id="new-message">New Message</button><p></div>');
-	//when user clicks new message button
+
+	//if either field is empty, display error message
+	if ($('input#search').val().length === 0 || $('input#textarea').val().length === 0) {
+		$('#message-user').append('<div id="error"><p>Please include both a user name and a message. Fields cannot be empty.</p><p><button id="new-message">Try Again</button><p></div>');
+
+		//when user clicks try again button
 		$('#new-message').click(function(){
 			// remove confirmation message and button
 			$('#confirmation').remove();
+			// remove error message
+			$('#error').remove();
 			// revert back to original message form
 			$('#message-form').show();
 		});
+	}
+
+	else if ($('input#search').val().length > 0) {
+		//replace html in that section with message and button
+		$('#message-user').append('<div id="confirmation"><p>Thanks! Your message has been sent.</p><p><button id="new-message">New Message</button><p></div>');
+
+		//when user clicks new message button
+			$('#new-message').click(function(){
+				// remove confirmation message and button
+				$('#confirmation').remove();
+				// remove error message
+				$('#error').remove();
+				// reset form fields
+				$('#message-form')[0].reset();
+				// revert back to original message form
+				$('#message-form').show();
+			});
+		}
 });
 
 
