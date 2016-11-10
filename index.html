@@ -2,13 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.auto-complete.css" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	  rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<title>Web App Dashboard</title>
 	</head>
@@ -183,7 +183,7 @@
 
 				<div id="message-user"><h2>Message User</h2>
 					<form>
-						<input id="search" type="search" placeholder="Search for User">
+						<input id="search" type="search" name="search" placeholder="Search for User">
 						<input id="textarea" type="textarea" placeholder="Message for User">
 						<button id="send-button" type="submit">Send</button>
 					</form>
@@ -270,6 +270,7 @@
 	  crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.js">
 	</script>
+	<script type="text/javascript" src="js/jquery.auto-complete.min.js"></script>
 	<script type="text/javascript" src="js/charts.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
