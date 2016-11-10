@@ -126,6 +126,34 @@ nav ul {
 	justify-content: space-around;
 }
 
+/* Notifications Drop Down */
+/* Used http://www.encodedna.com/jquery/create-a-facebook-like-notifications-using-jquery-css.htm as reference */
+
+#notifications {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	width: 250px;
+	height: 400px;
+	background: white;
+	border: 1px solid grey;
+	z-index: 1;
+	color: grey;
+	font-size: .75em;
+}
+
+ #notifications:before {
+		content: '';
+		display:block;
+		width:0;
+		height:0;
+		color:transparent;
+		border:10px solid #CCC;
+		border-color:transparent transparent #FFF;
+		margin-top:-20px;
+		margin-left:15px;
+	}
+
 /* Dashboard Title and Search Bar */
 
 #dash-title {
