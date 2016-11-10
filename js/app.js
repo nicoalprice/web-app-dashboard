@@ -1,11 +1,28 @@
 /* Close alert message when X is clicked. */
 $("#close-button").click(function() {
 	$("#alert").fadeOut("slow");
+});
+
+/* Notifications Drop Down List */
+ $('#notification-bell').click(function () {
+	// Toggle notifications drop-down
+	 $('#notifications').fadeToggle('fast', 'linear');
+	return false;
+});
+
+// Hide notifications drop-down when anywhere on the page is clicked
+$(document).click(function () {
+	$('#notifications').fadeOut("slow");
 	$("#alert-dot").fadeOut("slow");
 });
 
+// Do nothing when notifications div is clicked
+$('#notifications').click(function () {
+	return false;
+});
 
 /* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript. */
+/* Use JS to display error messages if user isn’t selected or message field is empty.*/
 
 //when user clicks send
 $('#send-button').click(function(e) {
@@ -45,18 +62,6 @@ $('#send-button').click(function(e) {
 			});
 		}
 });
-
-
-/* Use JS to display error messages if user isn’t selected or message field is empty.*/
-//function userError() {
-//	//(if no user is selected) {
-//		//display error message
-//	}
-//}
-//
-//function messageError() {
-//
-//}
 
 
 /* Add green bar to selected item on left column menu */
