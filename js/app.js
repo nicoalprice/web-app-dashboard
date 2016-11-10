@@ -4,19 +4,28 @@ $("#close-button").click(function() {
 });
 
 /* Notifications Drop Down List */
- $('#notification-bell').click(function () {
-	// Toggle notifications drop-down
-	 $('#notifications').fadeToggle('fast', 'linear');
+
+$('#notification-bell').click(function () {
+	// Show notifications drop-down
+	if ($('#notifications').css("visibility") == "hidden") {
+		$('#notifications').css("visibility", "visible").fadeIn();
+	}
+
+	else {
+		$('#notifications').fadeToggle('slow', 'linear');
+	}
+
+	$("#alert-dot").fadeOut("slow");
 	return false;
+
 });
 
 // Hide notifications drop-down when anywhere on the page is clicked
 $(document).click(function () {
 	$('#notifications').fadeOut("slow");
-	$("#alert-dot").fadeOut("slow");
 });
 
-// Do nothing when notifications div is clicked
+// Do nothing when notifications drop-down is clicked
 $('#notifications').click(function () {
 	return false;
 });
