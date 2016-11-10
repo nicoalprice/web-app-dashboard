@@ -345,20 +345,21 @@ path {
 
 
 /* ----- Recent Activity Widget ----- */
-
-.activity-description {
-
+.activity-info {
+	position: relative;
 }
 
-.activity-time {
-
+.activity-icon {
+	fill: gray;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	height: 40px;
+	width: auto;
 }
 
 
 /* ----- Message User Widget ----- */
-
-#message-user {
-}
 
 form {
 	width: 95%;
@@ -490,7 +491,9 @@ button {
 }
 
 
-/* ---------- MEDIA QUERIES ----------*/
+/* --------------------------------
+---------- MEDIA QUERIES ----------
+----------------------------------- */
 
 /*320px for phones*/
 @media screen and (min-width: 700px) {
