@@ -94,3 +94,21 @@ $('input[id="search"]').autoComplete({
 		suggest(matches);
 	}
 });
+
+/* Local Storage */
+// Store timezone setting when save button is clicked
+$('#save-button').click(function(){
+	var timezone = $('#timezone').val();
+	localStorage.setItem('mytimezone', timezone);
+	console.log(localStorage.getItem('mytimezone'));
+});
+
+//Show saved timezone on reload
+$('#timezone').val(localStorage.getItem('mytimezone'));
+
+//When cancel button is clicked, clear local storage
+$('#cancel-button').click(function(){
+	localStorage.clear();
+	// Revert back to 'Select Timezone' option
+	$('#timezone').val('a');
+});
