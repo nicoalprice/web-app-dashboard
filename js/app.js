@@ -46,7 +46,7 @@ $("document").ready(function() {
 		$('#message-form').hide();
 
 		//if either field is empty, display error message
-		if ($('input#search').val().length === 0 || $('input#textarea').val().length === 0) {
+		if ($('input#search').val().length === 0 || $('#textarea').val().length === 0) {
 			$('#message-user').append('<div id="error"><p>Please include both a user name and a message. Fields cannot be empty.</p><p><button id="new-message">Try Again</button><p></div>');
 
 			//when user clicks new message button

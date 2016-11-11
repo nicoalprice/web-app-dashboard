@@ -525,8 +525,6 @@ input#search:focus {
 	padding: 10px;
 }
 
-
-
 #send-email,
 #set-profile {
 	padding: 10px 10px 10px 0;
@@ -555,6 +553,7 @@ input#search:focus {
 	padding: 2px;
 	border-radius: 6px;
 	height: 2em;
+	border: 1px solid gray;
 }
 
 
@@ -565,6 +564,23 @@ button {
 	height: 2.5em;
 	font-weight: 600;
 	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #4d4c72;
+	border: none;
+	box-shadow: 0 2px #999;
+}
+
+button:hover {
+	background-color: ##4d4c72;
+}
+
+button:active {
+  background-color: #4d4c72;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
 }
 
 #send-button {
