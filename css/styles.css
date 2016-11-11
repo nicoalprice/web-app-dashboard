@@ -159,7 +159,7 @@ nav a:active {
 /* Used http://www.encodedna.com/jquery/create-a-facebook-like-notifications-using-jquery-css.htm as reference */
 
 #notifications {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 53px;
 	width: 250px;
@@ -251,6 +251,13 @@ main {
 	background: white;
 	border-radius: 4px;
 	border: 1px solid lightgrey;
+}
+
+input#search-bar {
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	text-indent: 10px;
 }
 
 /* Alert */
@@ -472,12 +479,12 @@ input#search,
 }
 
 input#search:focus {
-	border: 1px solid #4d4c72;
+	border: 2px solid #4d4c72;
 	color: #4d4c72;
 }
 
 #textarea:focus {
-	border: 1px solid #4d4c72;
+	border: 2px solid #4d4c72;
 	color: #4d4c72;
 }
 
@@ -487,19 +494,15 @@ input#search:focus {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: darkgrey;
-	padding-left: 10px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
 	color: darkgrey;
-	padding-left: 10px;
 }
 :-ms-input-placeholder { /* IE 10+ */
 	color: darkgrey;
-	padding-left: 10px;
 }
 :-moz-placeholder { /* Firefox 18- */
 	color: darkgrey;
-	padding-left: 10px;
 }
 
 
@@ -696,8 +699,6 @@ button:active {
 	}
 
 	#notifications {
-	position: absolute;
-	right: 0;
 	top: 60px;
 	width: 250px;
 	height: auto;
