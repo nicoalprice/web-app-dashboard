@@ -264,10 +264,6 @@ main {
 	padding: 10px;
 }
 
-#traffic {
-/*	position: relative;*/
-}
-
 #traffic-chart-buttons {
 	height: 1.5em;
 	display: flex;

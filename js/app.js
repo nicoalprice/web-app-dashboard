@@ -85,6 +85,7 @@ $('#send-button').click(function(e) {
 //	//display green bar next to selected icon
 //}
 
+
 /* Auto-Complete Member Search */
 
 $('input[id="search"]').autoComplete({
@@ -102,19 +103,29 @@ $('input[id="search"]').autoComplete({
 
 /* Local Storage */
 
-// Store timezone setting when save button is clicked
+// Store settings when save button is clicked
 $('#save-button').click(function(){
 	var timezone = $('#timezone').val();
 	localStorage.setItem('mytimezone', timezone);
-	console.log(localStorage.getItem('mytimezone'));
+
+	var email = $('email-switch').prop('checked');
+	localStorage.setItem('myemail', email);
+
+	var public = $('#public-switch').prop('checked');
+	localStorage.setItem('myprofile', public);
 });
 
 //Show saved timezone on reload
 $('#timezone').val(localStorage.getItem('mytimezone'));
+//Show saved checkboxes on reload
+$('#email-switch').prop('checked', localStorage.getItem('myemail'));
+$('#public-switch').prop('checked', localStorage.getItem('myprofile'));
 
 //When cancel button is clicked, clear local storage
 $('#cancel-button').click(function(){
 	localStorage.clear();
 	// Revert back to 'Select Timezone' option
 	$('#timezone').val('a');
+	$('#email-switch').prop('checked', false);
+	$('#public-switch').prop('checked', false);
 });
