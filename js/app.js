@@ -1,7 +1,9 @@
 /* Close alert message when X is clicked. */
+
 $("#close-button").click(function() {
 	$("#alert").fadeOut("slow");
 });
+
 
 /* Notifications Drop Down List */
 
@@ -30,6 +32,8 @@ $('#notifications').click(function () {
 	return false;
 });
 
+
+/* Send Message */
 /* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript. */
 /* Use JS to display error messages if user isn’t selected or message field is empty.*/
 
@@ -95,7 +99,9 @@ $('input[id="search"]').autoComplete({
 	}
 });
 
+
 /* Local Storage */
+
 // Store timezone setting when save button is clicked
 $('#save-button').click(function(){
 	var timezone = $('#timezone').val();
