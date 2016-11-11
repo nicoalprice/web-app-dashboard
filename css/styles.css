@@ -202,18 +202,16 @@ h3 {
 }
 
 #search-banner {
-	background: #fbfbfb;
 	padding: 10px;
-	padding-top: 0;
 	height: 60px;
-	border: 1px solid lightgray;
 	margin: auto;
 }
 
 #search-bar {
 	height: 30px;
 	width: 90%;
-	margin: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 	background: white;
 	border-radius: 4px;
 }
@@ -221,7 +219,7 @@ h3 {
 /* Main */
 
 main {
-	padding: 202px 20px 20px 20px;
+	padding: 138px 20px 20px 20px;
 	width: 100%;
 	background: white;
 }
@@ -265,24 +263,25 @@ main {
 }
 
 #traffic-chart-buttons {
-	height: 1.5em;
+	width: 100%;
+	height: auto;
 	display: flex;
-	flex-direction: column;
-	width: 95%;
-	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
 	color: grey;
+	padding: 10px;
 }
 
 #hourly-traffic,
 #daily-traffic-button,
 #weekly-traffic,
 #monthly-traffic {
-	width: 100px;
-	height: 1.5em;
-	line-height: 1.5em;
+	width: 80px;
+	height: 1em;
+	line-height: 1em;
 	text-align: center;
 	border-radius: 20px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .active {
@@ -368,6 +367,7 @@ path {
 	fill: white;
 }
 
+/* Using 'fill' on the following elements produces CSS Validator errors, but it seems to work and I couldn't find another way to get the colors to respond. */
 #instagram-svg {
 	fill: #7477bf;
 }
@@ -632,11 +632,13 @@ button {
 		margin-top: 60px;
 		padding: 0 0 0 80px;
 		width: calc(100%-80px);
-}
+	}
 
 	#dash-and-search {
 		position: relative;
 		margin-top: 0;
+		margin-right: 0;
+		width: 100%:
 	}
 
 	#dash-title {
@@ -680,7 +682,6 @@ button {
 
 	#traffic-chart-buttons {
 		height: 2em;
-		flex-direction: row;
 		justify-content: flex-end;
 		position: absolute;
 		right: 0;
@@ -688,7 +689,6 @@ button {
 		width: 70%;
 		margin-right: 5%;
 		margin-bottom: 20px;
-		color: grey;
 	}
 
 	#hourly-traffic,
@@ -699,7 +699,6 @@ button {
 		height: 2em;
 		line-height: 2em;
 		float: right;
-		text-align: center;
 		border-radius: 20px;
 		margin-left: 10px;
 		font-weight: 600;
