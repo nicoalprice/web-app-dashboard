@@ -46,7 +46,7 @@ $("document").ready(function() {
 		$('#message-form').hide();
 
 		//if either field is empty, display error message
-		if ($('input#search').val().length === 0 || $('input#textarea').val().length === 0) {
+		if ($('input#search').val().length === 0 || $('#textarea').val().length === 0) {
 			$('#message-user').append('<div id="error"><p>Please include both a user name and a message. Fields cannot be empty.</p><p><button id="new-message">Try Again</button><p></div>');
 
 			//when user clicks new message button
@@ -77,16 +77,6 @@ $("document").ready(function() {
 				});
 			}
 	});
-
-
-	/* Add green bar to selected item on left column menu */
-
-	//function showSelected() {
-	//	//when user clicks on menu item in left column
-	//	//icon turns white
-	//	//display green bar next to selected icon
-	//}
-
 
 	/* Auto-Complete Member Search */
 
