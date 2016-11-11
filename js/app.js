@@ -1,131 +1,135 @@
-/* Close alert message when X is clicked. */
+$("document").ready(function() {
 
-$("#close-button").click(function() {
-	$("#alert").fadeOut("slow");
-});
+	/* Close alert message when X is clicked. */
 
-
-/* Notifications Drop Down List */
-
-$('#notification-bell').click(function () {
-	// Show notifications drop-down
-	if ($('#notifications').css("visibility") == "hidden") {
-		$('#notifications').css("visibility", "visible").fadeIn();
-	}
-
-	else {
-		$('#notifications').fadeToggle('slow', 'linear');
-	}
-
-	$("#alert-dot").fadeOut("slow");
-	return false;
-
-});
-
-// Hide notifications drop-down when anywhere on the page is clicked
-$(document).click(function () {
-	$('#notifications').fadeOut("slow");
-});
-
-// Do nothing when notifications drop-down is clicked
-$('#notifications').click(function () {
-	return false;
-});
+	$("#close-button").click(function() {
+		$("#alert").fadeOut("slow");
+	});
 
 
-/* Send Message */
-/* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript. */
-/* Use JS to display error messages if user isn’t selected or message field is empty.*/
+	/* Notifications Drop Down List */
 
-//when user clicks send
-$('#send-button').click(function(e) {
-	//prevent default button click behavior
-	e.preventDefault();
-	$('#message-form').hide();
+	$('#notification-bell').click(function () {
+		// Show notifications drop-down
+		if ($('#notifications').css("visibility") == "hidden") {
+			$('#notifications').css("visibility", "visible").fadeIn();
+		}
 
-	//if either field is empty, display error message
-	if ($('input#search').val().length === 0 || $('input#textarea').val().length === 0) {
-		$('#message-user').append('<div id="error"><p>Please include both a user name and a message. Fields cannot be empty.</p><p><button id="new-message">Try Again</button><p></div>');
+		else {
+			$('#notifications').fadeToggle('slow', 'linear');
+		}
 
-		//when user clicks new message button
-		$('#new-message').click(function(){
-			// remove confirmation message and button
-			$('#confirmation').remove();
-			// remove error message
-			$('#error').remove();
-			// revert back to original message form
-			$('#message-form').show();
-		});
-	}
+		$("#alert-dot").fadeOut("slow");
+		return false;
 
-	else if ($('input#search').val().length > 0) {
-		//replace html in that section with message and button
-		$('#message-user').append('<div id="confirmation"><p>Thanks! Your message has been sent.</p><p><button id="new-message">New Message</button><p></div>');
+	});
 
-		//when user clicks new message button
+	// Hide notifications drop-down when anywhere on the page is clicked
+	$(document).click(function () {
+		$('#notifications').fadeOut("slow");
+	});
+
+	// Do nothing when notifications drop-down is clicked
+	$('#notifications').click(function () {
+		return false;
+	});
+
+
+	/* Send Message */
+	/* Use JS to allow you to submit the form and display a confirmation the message was sent. You won't actually submit the form, just simulate the action using JavaScript. */
+	/* Use JS to display error messages if user isn’t selected or message field is empty.*/
+
+	//when user clicks send
+	$('#send-button').click(function(e) {
+		//prevent default button click behavior
+		e.preventDefault();
+		$('#message-form').hide();
+
+		//if either field is empty, display error message
+		if ($('input#search').val().length === 0 || $('input#textarea').val().length === 0) {
+			$('#message-user').append('<div id="error"><p>Please include both a user name and a message. Fields cannot be empty.</p><p><button id="new-message">Try Again</button><p></div>');
+
+			//when user clicks new message button
 			$('#new-message').click(function(){
 				// remove confirmation message and button
 				$('#confirmation').remove();
 				// remove error message
 				$('#error').remove();
-				// reset form fields
-				$('#message-form')[0].reset();
 				// revert back to original message form
 				$('#message-form').show();
 			});
 		}
-});
+
+		else if ($('input#search').val().length > 0) {
+			//replace html in that section with message and button
+			$('#message-user').append('<div id="confirmation"><p>Thanks! Your message has been sent.</p><p><button id="new-message">New Message</button><p></div>');
+
+			//when user clicks new message button
+				$('#new-message').click(function(){
+					// remove confirmation message and button
+					$('#confirmation').remove();
+					// remove error message
+					$('#error').remove();
+					// reset form fields
+					$('#message-form')[0].reset();
+					// revert back to original message form
+					$('#message-form').show();
+				});
+			}
+	});
 
 
-/* Add green bar to selected item on left column menu */
+	/* Add green bar to selected item on left column menu */
 
-//function showSelected() {
-//	//when user clicks on menu item in left column
-//	//icon turns white
-//	//display green bar next to selected icon
-//}
-
-
-/* Auto-Complete Member Search */
-
-$('input[id="search"]').autoComplete({
-	minChars: 1,
-	source: function(term, suggest){
-		term = term.toLowerCase();
-		var choices = ['Bucky Bibbler', 'Abraham Lincoln', 'Sheri Berry', 'Joan Pennington', 'Hillary Clinton', 'Erik Estrada', 'Jacob Jacobson', 'Weird Al Yankovich', 'Mickey Mouse', 'John Boy', 'Babe Ruth', 'Dolly Parton', 'Scout Finch'];
-		var matches = [];
-		for (i=0; i<choices.length; i++)
-			if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
-		suggest(matches);
-	}
-});
+	//function showSelected() {
+	//	//when user clicks on menu item in left column
+	//	//icon turns white
+	//	//display green bar next to selected icon
+	//}
 
 
-/* Local Storage */
+	/* Auto-Complete Member Search */
 
-// Store settings when save button is clicked
-$('#save-button').click(function(){
-	var timezone = $('#timezone').val();
-	localStorage.setItem('mytimezone', timezone);
+	$('input[id="search"]').autoComplete({
+		minChars: 1,
+		source: function(term, suggest){
+			term = term.toLowerCase();
+			var choices = ['Bucky Bibbler', 'Abraham Lincoln', 'Sheri Berry', 'Joan Pennington', 'Hillary Clinton', 'Erik Estrada', 'Jacob Jacobson', 'Weird Al Yankovich', 'Mickey Mouse', 'John Boy', 'Babe Ruth', 'Dolly Parton', 'Scout Finch'];
+			var matches = [];
+			for (i=0; i<choices.length; i++)
+				if (~choices[i].toLowerCase().indexOf(term)) matches.push(choices[i]);
+			suggest(matches);
+		}
+	});
 
-	var email = $('email-switch').prop('checked');
-	localStorage.setItem('myemail', email);
 
-	var public = $('#public-switch').prop('checked');
-	localStorage.setItem('myprofile', public);
-});
+	/* Local Storage */
 
-//Show saved timezone on reload
-$('#timezone').val(localStorage.getItem('mytimezone'));
-//Show saved checkboxes on reload
-$('#email-switch').prop('checked', localStorage.getItem('myemail'));
-$('#public-switch').prop('checked', localStorage.getItem('myprofile'));
+	// Store settings when save button is clicked
+	$('#save-button').click(function(){
+		var timezone = $('#timezone').val();
+		localStorage.setItem('mytimezone', timezone);
 
-//When cancel button is clicked, clear local storage
-$('#cancel-button').click(function(){
-	localStorage.clear();
-	// Revert back to 'Select Timezone' option
-	$('#timezone').val('a');
-	$('#email-switch').prop('checked', false);
-	$('#public-switch').prop('checked', false);
+		var email = $('email-switch').prop('checked'); //returns true or false
+		localStorage.setItem('myemail', email);
+
+		var public = $('#public-switch').prop('checked'); //returns true or false
+		localStorage.setItem('myprofile', public);
+	});
+
+	//Show saved timezone on reload
+	$('#timezone').val(localStorage.getItem('mytimezone'));
+	//Show saved checkboxes on reload
+	$('#email-switch').prop('checked', localStorage.getItem('myemail'));
+	$('#public-switch').prop('checked', localStorage.getItem('myprofile'));
+
+	//When cancel button is clicked, clear local storage
+	$('#cancel-button').click(function(){
+		localStorage.clear();
+		// Revert back to defaults
+		$('#timezone').val('a');
+		$('#email-switch').prop('checked', false);
+		$('#public-switch').prop('checked', false);
+	});
+
 });
