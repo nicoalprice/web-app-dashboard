@@ -476,6 +476,7 @@ input#search,
 	border-radius: 6px;
 	margin-bottom: 10px;
 	box-shadow: none;
+	text-indent: 10px;
 }
 
 input#search:focus {
