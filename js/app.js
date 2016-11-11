@@ -105,23 +105,33 @@ $("document").ready(function() {
 
 	/* Local Storage */
 
-	// Store settings when save button is clicked
-	$('#save-button').click(function(){
+// Store settings when save button is clicked
+$('#save-button').click(function(){
 		var timezone = $('#timezone').val();
 		localStorage.setItem('mytimezone', timezone);
 
-		var email = $('email-switch').prop('checked'); //returns true or false
+		var email = $('#email-switch').prop('checked');
 		localStorage.setItem('myemail', email);
 
-		var public = $('#public-switch').prop('checked'); //returns true or false
+		var public = $('#public-switch').prop('checked');
 		localStorage.setItem('myprofile', public);
 	});
 
 	//Show saved timezone on reload
 	$('#timezone').val(localStorage.getItem('mytimezone'));
+
 	//Show saved checkboxes on reload
-	$('#email-switch').prop('checked', localStorage.getItem('myemail'));
-	$('#public-switch').prop('checked', localStorage.getItem('myprofile'));
+	if (localStorage.getItem('myemail') == "true") {
+		$('#email-switch').prop('checked', true);
+	} else {
+		$('#email-switch').prop('checked', false);
+	};
+
+	if (localStorage.getItem('myprofile') == "true") {
+		$('#public-switch').prop('checked', true);
+	} else {
+		$('#public-switch').prop('checked', false);
+	};
 
 	//When cancel button is clicked, clear local storage
 	$('#cancel-button').click(function(){

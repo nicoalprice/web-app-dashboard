@@ -59,18 +59,25 @@ header {
 	padding-bottom: 0;
 	margin-bottom: 0;
 	width: 100%;
+	padding: 10px;
 }
 
 header ul {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	flex-direction: column;
+/*	flex-direction: column;*/
 	padding: 0;
 }
 
 header li {
 	justify-content: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#profile-name {
+	display: none;
 }
 
 #divider {
@@ -132,7 +139,7 @@ nav ul {
 #notifications {
 	position: absolute;
 	right: 0;
-	top: 60px;
+	top: 53px;
 	width: 250px;
 	height: auto;
 	background: white;
@@ -152,7 +159,7 @@ nav ul {
 		border:10px solid #CCC;
 		border-color:transparent transparent #FFF;
 		margin-top:-20px;
-		margin-left:15px;
+		margin-left: 170px;
 	}
 
 #notifications:last-child {
@@ -194,6 +201,13 @@ h3 {
 	margin: 0;
 }
 
+/* Main */
+
+main {
+	padding: 100px 20px 20px 20px;
+	width: 100%;
+	background: white;
+}
 
 /* Dashboard Title and Search Bar */
 
@@ -214,14 +228,6 @@ h3 {
 	margin-right: 5%;
 	background: white;
 	border-radius: 4px;
-}
-
-/* Main */
-
-main {
-	padding: 138px 20px 20px 20px;
-	width: 100%;
-	background: white;
 }
 
 /* Alert */
@@ -414,27 +420,27 @@ path {
 	position: relative;
 }
 
+.activity-info,
+.new-member-info {
+	font-size: .8em;
+}
+
 .activity-icon {
-	fill: gray;
 	position: absolute;
-	right: 10px;
-	top: 30%;
+	right: 0;
+	bottom: 0;
 	height: 40px;
 	width: auto;
 }
 
-
 /* ----- Message User Widget ----- */
 
-form {
-	width: 95%;
-	margin-left: 5%;
-	margin-right: 5%;
-	padding-left: 0;
+#message-form {
+	width: 100%;
 }
 
-#search,
-#textarea {
+input#search,
+input#textarea {
 	width: 100%;
 	border-radius: 6px;
 	margin-bottom: 10px;
@@ -471,6 +477,9 @@ form {
 
 #toggle-element,
 #toggle {
+	display: inline-block;
+	vertical-align: center;
+	margin: auto;
 	width: 80px;
 	padding: 10px;
 }
@@ -481,6 +490,8 @@ form {
 	height: 6em;
 	padding: 10px;
 }
+
+
 
 #send-email,
 #set-profile {
@@ -501,6 +512,8 @@ form {
 #public-toggle a {
 	background: white;
 }
+
+
 
 #timezone {
 	width: 95%;
@@ -626,6 +639,36 @@ button {
 
 	nav li img {
 		height: 35px;
+	}
+
+	#profile-name {
+		display: block;
+	}
+
+	#notifications {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	width: 250px;
+	height: auto;
+	background: white;
+	border: 1px solid grey;
+	z-index: 1;
+	color: grey;
+	font-size: .8em;
+	visibility: hidden;
+}
+
+ #notifications:before {
+		content: '';
+		display:block;
+		width:0;
+		height:0;
+		color:transparent;
+		border:10px solid #CCC;
+		border-color:transparent transparent #FFF;
+		margin-top:-20px;
+		margin-left:15px;
 	}
 
 	main {
@@ -796,6 +839,12 @@ button {
 		font-size: .9em;
 	}
 
+
+	.activity-icon {
+		right: 10px;
+		top: 30%;
+	}
+
 	/* ---- Settings -----*/
 
 	#email-toggle,
@@ -809,18 +858,13 @@ button {
 		padding: 10px;
 		text-align: center;
 		margin: auto;
+		width: auto;
 	}
 
 	#toggle-element,
 	#toggle {
-		display: inline-block;
+		margin-right: 10%;
 		float: right;
-		position: absolute;
-		right: 30%;
-		vertical-align: center;
-		margin: auto;
-		width: 80px;
-		padding: 10px;
 	}
 
 	#send-email,
@@ -840,5 +884,13 @@ button {
 
 	#search-bar {
 		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+
+	#toggle-element,
+	#toggle {
+		margin-right: 20%;
 	}
 }
