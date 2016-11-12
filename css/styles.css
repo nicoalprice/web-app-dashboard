@@ -578,7 +578,7 @@ button {
 }
 
 button:hover {
-	background-color: ##4d4c72;
+	background-color: #4d4c72;
 }
 
 button:active {
@@ -733,7 +733,7 @@ button:active {
 		position: relative;
 		margin-top: 0;
 		margin-right: 0;
-		width: 100%:
+		width: 100%;
 	}
 
 	#dash-title {

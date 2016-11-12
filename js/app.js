@@ -115,13 +115,13 @@ $('#save-button').click(function(){
 		$('#email-switch').prop('checked', true);
 	} else {
 		$('#email-switch').prop('checked', false);
-	};
+	}
 
 	if (localStorage.getItem('myprofile') == "true") {
 		$('#public-switch').prop('checked', true);
 	} else {
 		$('#public-switch').prop('checked', false);
-	};
+	}
 
 	//When cancel button is clicked, clear local storage
 	$('#cancel-button').click(function(){
