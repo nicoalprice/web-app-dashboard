@@ -96,35 +96,37 @@ $("document").ready(function() {
 	/* Local Storage */
 
 // Store settings when save button is clicked
-$('#save-button').click(function(){
-		var timezone = $('#timezone').val();
-		localStorage.setItem('mytimezone', timezone);
+$('#save-button').click(function(e){
+	e.preventDefault();
+	var timezone = $('#timezone').val();
+	localStorage.setItem('mytimezone', timezone);
 
-		var email = $('#email-switch').prop('checked');
-		localStorage.setItem('myemail', email);
+	var email = $('#email-switch').prop('checked');
+	localStorage.setItem('myemail', email);
 
-		var public = $('#public-switch').prop('checked');
-		localStorage.setItem('myprofile', public);
-	});
+	var public = $('#public-switch').prop('checked');
+	localStorage.setItem('myprofile', public);
+});
 
 	//Show saved timezone on reload
 	$('#timezone').val(localStorage.getItem('mytimezone'));
 
 	//Show saved checkboxes on reload
-	if (localStorage.getItem('myemail') == "true") {
-		$('#email-switch').prop('checked', true);
-	} else {
-		$('#email-switch').prop('checked', false);
-	};
+		if (localStorage.getItem('myemail') == "true") {
+			$('#email-switch').prop('checked', true);
+		} else {
+			$('#email-switch').prop('checked', false);
+		}
 
-	if (localStorage.getItem('myprofile') == "true") {
-		$('#public-switch').prop('checked', true);
-	} else {
-		$('#public-switch').prop('checked', false);
-	};
+		if (localStorage.getItem('myprofile') == "true") {
+			$('#public-switch').prop('checked', true);
+		} else {
+			$('#public-switch').prop('checked', false);
+		}
 
 	//When cancel button is clicked, clear local storage
-	$('#cancel-button').click(function(){
+	$('#cancel-button').click(function(e){
+		e.preventDefault();
 		localStorage.clear();
 		// Revert back to defaults
 		$('#timezone').val('a');
